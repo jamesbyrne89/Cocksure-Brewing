@@ -11,8 +11,8 @@
 get_header(); ?>
 
 <header class="contact-main-header">
+
 <?php the_title( '<h1 class="sq-main-title">', '</h1>' ); ?>
-	
 	</div>
 </header><!-- .entry-header -->
 
@@ -26,10 +26,10 @@ get_header(); ?>
 
 <div id="contact-left">
 	<h2>Drop us a line</h2>
-			<p>Cocksure Brewing Co.<p>
-		<p>123 Some Street<p>
-		<p>Townville<p>
-		<p>SW19 ABC<p>
+			<p>Cocksure Brewing Co.</p>
+		<p>123 Some Street</p>
+		<p>Townville</p>
+		<p>SW19 ABC</p>
 <div class="sq-site-social">
 				<?php 
 					$facebook = get_theme_mod('square_social_facebook');
@@ -79,6 +79,12 @@ get_header(); ?>
   
 </form>
  
+  </div>
+  </section>
+<section id="careers-section">
+  <div id="careers-wrapper">
+  <h2>Come work for us</h2>
+  Head Brewer
   </div>
   </section>
 			

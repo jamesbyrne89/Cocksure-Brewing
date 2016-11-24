@@ -253,7 +253,7 @@ h1{
 	font-size: 28px;
 	margin: 0px auto 15px auto;
 	display: inline-block;
-	padding: 4px 18px;
+	padding: 0.5rem;
 }
 
 h2{
@@ -430,10 +430,14 @@ big {
 --------------------------------------------------------------*/
 
 .blog-main-header{
-	background-color: #94DC19;
-	padding: 200px 0px 0px 0px;
+	background: url('/wp-content/uploads/2016/11/CveDjm4W8AAn35W.jpg') no-repeat;
+	background-position: 0px -400px;
+	background-size: cover;
+	filter: grayscale();
+	padding: 300px 0px 20px 0px;
 	min-height: 25vh;
 	margin-bottom: 0px;
+	top: 100px;
 	width: 100%;
 	position: fixed;
 	z-index: -999;
@@ -443,7 +447,7 @@ big {
 #blog-primary {
 	width: 100%;
 	padding: 5vh 20vw;
-	margin: 40vh auto 0px auto;
+	margin: 50vh auto 0px auto;
 	background-color: #fff;
 }
 
@@ -453,7 +457,7 @@ big {
 
 .single-main-header{
 	background-color: #F5DA07;
-	padding: 200px 0 20px;
+	padding: 200px 0 20px 0px;
 	min-height: 25vh;
 	margin-bottom: 0px;
 	width: 100%;
@@ -492,7 +496,7 @@ big {
 #about-primary {
 	width: 100%;
 	padding: 10vh 20vw;
-	margin-top: 55vh;
+	margin-top: 52vh;
 	background-color: #fff;
 }
 
@@ -572,17 +576,19 @@ big {
 	display: inline-block;
 	margin-right: 1rem;
 	color: #000;
+		transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+
 }
 
 #contact-left .fa:hover {
 	display: inline-block;
 	margin-right: 1rem;
 	color: #fff;
-	    -webkit-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
-    -ms-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
+	transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
 }
 
 
@@ -677,7 +683,122 @@ color: #000;}
 	color:#FFF;
 	background: #000;
 	opacity: 0.8;
-	cursor:pointer;}
+	cursor:pointer;
+}
+
+#careers-wrapper {
+	display: block;
+	width: 70%;
+	text-align: center;
+	margin: auto;
+}
+
+#careers-wrapper h2 {
+	color: #000;
+	font-weight: 800;
+	margin-bottom: 60px;
+	font-size: 36px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', 'karla', arial, sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+## 404
+--------------------------------------------------------------*/
+
+.sq-404-header{
+	background-color: #cacaca;
+	background-size: cover;
+	background-position: 0px -300px;
+	padding: 150px 0 20px;
+	min-height: 82vh;
+	margin-bottom: 0px;
+	width: 100%;
+	z-index: -999;
+	text-align: center;
+}
+
+.sq-404-container{
+	width: 80%;
+	margin: 50px auto;
+	z-index: 999;
+		background-color: #cacaca;
+		font-size: 6rem;
+}
+
+.sq-404-header > p {
+	font-size: 2rem !important;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+/*--------------------------------------------------------------
+## Give A Cock A Home Page
+--------------------------------------------------------------*/
+
+.gacah-main-header{
+	background-color: #F5DA07;
+	background: url('/wp-content/uploads/2016/11/kavutha-and-chicken_cropped.jpg');
+	filter:grayscale();
+	background-size: cover;
+	background-position: 0px -300px;
+	padding: 300px 0 20px;
+	min-height: 30vh;
+	margin-bottom: 0px;
+	width: 100%;
+	position: relative;
+	    top: 90px;
+	z-index: -999;
+	text-align: center;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    height: 100vh;
+    width: 33%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: inline-block;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    display: block;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
 
 
 /*--------------------------------------------------------------
@@ -702,6 +823,11 @@ color: #000;}
 	z-index: 5;
 	bottom: 7vh;
 }
+
+
+/*--------------------------------------------------------------
+## Front Page
+--------------------------------------------------------------*/
 
 #splash-text {
 	text-align: center;
@@ -755,7 +881,7 @@ color: #000;}
 #beer-section {
 
 	width: 100%;
-	height: 120vh;
+	height: 80vh;
 	background-color: #cacaca;
 }
 
@@ -780,25 +906,67 @@ color: #000;}
 
 
 #beer-left {
-
-	height: 60vh;
+    display: block;
+    position: relative;
+	height: 40vh;
 	width: 100%;
 	background-color: #F5DA07;
 	text-align: center;
 	display: inline-block;
 	box-sizing: border-box;
+	overflow: hidden;
+    background-size: 100% auto;
 }
+
+.overlay-yellow {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #F5DA07 ;
+    background-size:50px 50px;
+    opacity:0.7;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+
+.overlay-green {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #94DC19 ;
+    background-size:50px 50px;
+    opacity:0.7;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+
+#pale-ale:hover, #ipa:hover {
+	transform:scale(1.05) rotate(0deg);
+	     -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+}
+ 
+
 
 #beer-right{
 
-	height: 60vh;
+	height: 40vh;
 	width: 100%;
 	overflow: hidden;
 	background-color: #CACACA;
 	text-align: left;
 		display: inline-block;
 		box-sizing: border-box;
-		padding: 100px;
+		padding: 50px;
 		color: #fff;
 		font-size: 20px;
 }
@@ -807,7 +975,7 @@ color: #000;}
 	text-align: left;
 	color: #000;
 	font-weight: 800;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 	font-size: 36px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -815,21 +983,25 @@ color: #000;}
 }
 
 #pale-ale {
-	max-height: 60vh;
-	margin: auto;
-		display: inline-block;
+    display:block;
+    width: auto;
+    margin: -10% auto auto auto;
+    height: 150%;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
 }
 
 #beer-left-second{
 
-	height: 60vh;
+	height: 40vh;
 	width: 100%;
 	overflow: hidden;
 	background-color: #CACACA;
 	text-align: left;
 		display: inline-block;
 		box-sizing: border-box;
-		padding: 100px;
+		padding: 50px;
 		color: #fff;
 		font-size: 20px;
 }
@@ -838,33 +1010,29 @@ color: #000;}
 	text-align: left;
 	color: #000;
 	font-weight: 800;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 	font-size: 36px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-family: 'Roboto Condensed', 'karla', arial, sans-serif;
 }
 
-#ipa {
-	max-height: 60vh;
-	margin: auto;
-		display: inline-block;
-}
-
 #beer-right-second {
-
-	height: 60vh;
+    display: block;
+    position: relative;
+	height: 40vh;
 	width: 100%;
 	background-color: #94DC19;
 	text-align: center;
 	display: inline-block;
 	float: left;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 #ipa {
-	height: 100%;
-	margin: auto;
+	height: 150%;
+	margin: -10% auto auto auto;
 		display: inline-block;
 }
 
@@ -912,20 +1080,20 @@ color: #000;}
 
 #news-section {
 		width: 100%;
-	height: 70vh;
+	min-height: 70vh;
 	text-align: center;
 	vertical-align: center;
 	color: #000;
 	font-size: 26px;
-	padding: 0px 0px 150px 0px;
+	padding: 0px 0px 150px;
 	background-color: #fff;
 	box-sizing: border-box;
 
 }
 
 
-.about-button a {
-	margin: 50px auto 100px auto;
+.cta-button a {
+	margin: auto;
     font-family:  'roboto condensed', 'karla', arial, sans-serif ;
     text-decoration: none;
     text-transform: uppercase;
@@ -944,7 +1112,7 @@ color: #000;}
     transition: all ease 0.3s;
     }
 
- .about-button a:hover {	font-family: 'roboto condensed', 'karla', arial, sans-serif ;
+ .cta-button a:hover {	font-family: 'roboto condensed', 'karla', arial, sans-serif ;
 		text-decoration: none;
 		text-transform: uppercase ; 
 		font-weight: 800;
@@ -958,6 +1126,13 @@ color: #000;}
 		opacity: 0.75;
 	-webkit-transition: all ease 0.3s;
 	-moz-transition: all ease 0.3s;
+}
+
+.arrows {
+	position: relative;
+	right: 0px;
+	margin-left: 1rem;
+	text-align: right;
 }
 
 #news-header {
@@ -1036,6 +1211,26 @@ color: #000;}
 	font-size: 26px;
 	
 }
+
+/*--------------------------------------------------------------
+## Instagram Grid
+--------------------------------------------------------------*/
+
+.insta-grid {
+	width: 80%;
+	margin: 150px auto;
+}
+
+.insta-grid h3 {
+	font-weight: bold;
+}
+
+.insta-grid ul li {
+	margin: 10px;
+	width: 15% !important;
+	height: 225px !important;
+}
+
 
 /*--------------------------------------------------------------
 # Elements
@@ -1242,6 +1437,7 @@ input[type="search"] {
 a {
 	color: #222;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 a:visited {
@@ -1251,7 +1447,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: #F5DA07;
+	color: #000;
 	transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
@@ -1267,7 +1463,9 @@ a:active {
 }
 
 .single-entry-content a{
-	color: #5bc2ce;
+	color: #cacaca;
+	font-weight: bold;
+		border: solid 0px #000;
 	transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
@@ -1370,6 +1568,10 @@ a:active {
 	margin: 0 0 30px;
 }
 
+.widget h3 {
+	margin: 0 0 30px;
+}
+
 .widget ul{
 	list-style: none;
 	margin: 0;
@@ -1383,6 +1585,11 @@ a:active {
 .widget a{
 	text-decoration: none;
 	color: #444;
+}
+.widget a:hover {
+	text-decoration: none;
+	color: #444;
+	transform: scale(1.1);
 }
 
 #sq-colophon .widget:last-child{
@@ -1460,7 +1667,7 @@ a:active {
 	font-size: 18px;
 	line-height: 1.8;
 	font-family: 'karla', arial, sans-serif;
-	margin: 100px auto;
+	margin: 0px auto;
 
 }
 
@@ -1491,13 +1698,15 @@ a:active {
 .sq_no_sidebar #primary{
 	width: auto;
 	float: none;
+	width: 100%;
 }
 
 .sq_no_sidebar_condensed #primary{
 	width: 76%;
 	float: none;
 	margin: 0 auto;
-	margin-top: calc(55vh + 89px);
+	margin-top: 100px;
+	background-color: none;
 }
 
 .sq_left_sidebar #primary{
@@ -1639,6 +1848,10 @@ a:active {
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
+
+.widget-title {
+		font-weight: bold;
+}
 
 .widget-area .widget-title{
 	font-weight: 400;
@@ -1992,10 +2205,10 @@ object {
 ## General
 --------------------------------------------------------------*/
 .sq-container{
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
 	z-index: 999;
-		background-color: none;
+		background-color: transparent;
 }
 
 .blog-container{
@@ -2085,23 +2298,24 @@ object {
 	background-color: #CCC;
 	background-repeat: no-repeat;
 	background-position: 50% 30%;
-	min-height: 55vh;
+	min-height: 30vh;
 	margin-bottom: 0px;
 	background-size: cover;
 	width: 100%;
 	filter: grayscale();
-	position: fixed;
 	top: 114px;
 	z-index: -999;
 	text-align: center;
 	padding: 300px 0 20px;
+	position: absolute;
+	top: 90px;
 }
 
 .sq-main-title{
 	margin: 0px auto;
 	font-family: 'Roboto Condensed', sans-serif;
-	letter-spacing: 1px;
-	font-size: 4.5rem;
+	letter-spacing: 0.25rem;
+	font-size: 3.75rem;
 	font-weight: 800;
 	text-transform: uppercase;
 	color: #fff;
@@ -2110,9 +2324,15 @@ object {
 	bottom: 0px;
 	text-align: center;
 	margin: auto;
-	background-color: rgba(0,0,0,.7);
+	background-color: #000;
+	border-radius: 3.25rem;
+	min-width: 20vw;
 }
 
+.sq-main-title:before, .sq-main-title:after {
+content: "-";
+margin: 1.5rem;
+}
 
 
 .sq-site-title{
@@ -2689,7 +2909,7 @@ object {
 	padding: 50px 0;
 	line-height: 1.6;
 	background: #000;
-border-bottom: slid 1px #cacaca;
+border-top: solid 8px #cacaca;
 }
 
 .sq-site-info{

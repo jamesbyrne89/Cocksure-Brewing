@@ -102,6 +102,16 @@ function square_widgets_init() {
 		'after_title'   => '</h4>',
 	) );
 
+		register_sidebar( array(
+		'name'          => esc_html__( 'Front Page Above Footer', 'square' ),
+		'id'            => 'square-above-footer',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h5 class="widget-title">',
+		'after_title'   => '</h5>',
+	) );
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer 1', 'square' ),
 		'id'            => 'square-footer1',

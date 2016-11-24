@@ -17,6 +17,7 @@ get_header(); ?>
 </header><!-- .entry-header -->
 
 <div class="about-container">
+<div id="post-wrapper">
 	<div id="about-primary" class="content-area">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -35,7 +36,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+</div>
 </div>
 
 <?php get_footer(); ?>

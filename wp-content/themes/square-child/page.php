@@ -9,7 +9,7 @@ get_header(); ?>
 
 <header class="sq-main-header">
 	<div class="sq-container">
-		
+<?php the_title( '<h1 class="sq-main-title">', '</h1>' ); ?>		
 	</div>
 </header><!-- .entry-header -->
 
@@ -18,7 +18,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 		<main id="main" class="site-main" role="main">
-<?php the_title( '<h1 class="sq-main-title">', '</h1>' ); ?>
+
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 				<?php
