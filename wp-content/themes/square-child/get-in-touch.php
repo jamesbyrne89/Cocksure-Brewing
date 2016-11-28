@@ -23,8 +23,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 <section id="contact">
-
-<div id="contact-left">
+<ul id="contact-wrapper">
+<li  id="contact-left">
+<div>
 	<h2>Drop us a line</h2>
 			<p>Cocksure Brewing Co.</p>
 		<p>123 Some Street</p>
@@ -62,8 +63,10 @@ get_header(); ?>
 						echo '<a class="sq-instagram" href="'.esc_url( $instagram ).'" target="_blank"><i class="fa fa-instagram"></i></a>';
 				?>
 				</div>
-</div>
-<div id="contact-right">
+
+</div></li>
+<li id="contact-right">
+<div>
 
 <form name="htmlform" method="post" action="toyousender.php">
 
@@ -80,7 +83,9 @@ get_header(); ?>
 </form>
  
   </div>
-  </section>
+  </li>
+  </ul>
+ </section>
 <section id="careers-section">
   <div id="careers-wrapper">
   <h2>Come work for us</h2>

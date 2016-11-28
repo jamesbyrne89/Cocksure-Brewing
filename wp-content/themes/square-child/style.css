@@ -281,7 +281,7 @@ h6{
 	margin-bottom: 10px;
 }
 p {
-	margin:0 0 15px;
+	margin:0 0 50px;
 }
 
 dfn,
@@ -538,6 +538,16 @@ big {
 	background-color: #fff;
 }
 
+#contact-wrapper {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+    background-color: transparent;
+}
+
+
 
 
 	#contact-left {
@@ -554,6 +564,7 @@ big {
     padding: 40px 100px;
     color: #fff;
     font-size: 20px;
+    display: inline-block;
 }
 
 
@@ -612,6 +623,7 @@ big {
 		color: #fff;
 		font-size: 20px;
 		margin-bottom: 20vh;
+		display: inline-block;
 }
 
 
@@ -626,6 +638,7 @@ color: #000;}
 		background: #cacaca;
 		text-align: center;
 		z-index: 50;
+		overflow: hidden;
 	}
 
 .container {width:100%; height:auto; margin: 50px auto 0 auto; padding: 50px 0;}
@@ -812,6 +825,7 @@ div.panel.show {
 	position: fixed;
 	z-index: -100;
 	text-align: center;
+	overflow: hidden;
 
 }
 
@@ -1731,7 +1745,7 @@ a:active {
 	position: relative;
 	padding: 80px 0px;
 	font-size: 18px;
-	border-bottom: solid 1px #cacaca;
+	border-bottom: double 6px #cacaca;
 }
 
 .entry-header{
@@ -3662,6 +3676,12 @@ html, body {
 	    height: auto;
 	}
 
+	#blog-primary {
+    width: 100%;
+    padding: 5vw;
+        margin: 20vh auto 0px auto;
+}
+
 }
 
 @media screen and (max-width: 900px){
@@ -3678,8 +3698,8 @@ html, body {
 		right: 0;
 		float: none;
 		width: auto;
-		border-top: 2px solid #5bc2ce;
-		border-bottom: 1px solid #5bc2ce;
+		border-top: 2px solid #cacaca;
+		border-bottom: 1px solid #cacaca;
 	}
 
 	.sq-main-navigation a{
@@ -3733,6 +3753,40 @@ html, body {
 	.sq-elasticstack{
 		height: 320px;
 	}
+
+	#contact-left, #contact-right {
+		display: block;
+		width: 100%;
+		margin: 0px;
+		height: auto;
+	}
+
+	#contact-left {
+		padding: 40px;
+	}
+
+	#contact-right {
+		padding: 40px;
+	}
+
+	#contact-right form {
+			width: 95%;
+	}
+#careers-wrapper {
+	padding: 40px;
+}
+#intro-section {
+	width: 100%;
+	padding: 40px;
+}
+#intro-holder {
+    width: 95%;
+}
+#pale-ale, #ipa {
+	height: 100%;
+	margin: 0;
+}
+
 }
 
 @media screen and (max-width: 768px){
@@ -3870,6 +3924,27 @@ html, body {
 		width: 48%;
 		margin-right: 0;
 	}
+
+	.sq-main-title {
+		max-width: 95vw;
+	}
+
+	.blog-main-header, .contact-main-header {
+    background: url() ;
+    padding: 50px 0px 20px 0px;
+}
+
+.insta-grid ul li {
+	width: 44% !important;
+}
+.insta-grid {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#charity-section {
+	padding: 40px;
+}
 }
 
 @media screen and (max-width: 580px){

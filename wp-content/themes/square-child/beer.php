@@ -14,17 +14,17 @@ get_header(); ?>
 </section>
 <div class="beer-container">
 	<div id="beer-primary" class="content-area">
-<button class="accordion">Section 1</button>
+<button class="accordion">P'Ale</button>
 <div class="panel">
   <p>Lorem ipsum...</p>
 </div>
 
-<button class="accordion">Section 2</button>
+<button class="accordion">IPA</button>
 <div class="panel">
   <p>Lorem ipsum...</p>
 </div>
 
-<button class="accordion">Section 3</button>
+<button class="accordion">Red</button>
 <div class="panel">
   <p>Lorem ipsum...</p>
 </div>
