@@ -1,0 +1,41 @@
+jQuery(document).ready(function(){
+    jQuery('input[type="radio"]').click(function(){
+		var wpinsta_radio_settings=jQuery(this).attr("value");
+        if(jQuery(this).attr("value")=="carousel_layout"){
+			jQuery(".wp_carowsel_hide").show();
+			jQuery("#wpinsta_IMAGE_SLIDER").show();
+			jQuery("#wpinsta_hide_col").hide();
+			jQuery("#grid_loadmore").hide();
+			jQuery('.updated').hide();  
+        }
+        if(jQuery(this).attr("value")=="grid_layout"){
+			jQuery(".wp_carowsel_hide").hide();
+			jQuery("#wpinsta_IMAGE_SLIDER").hide();
+			jQuery("#wpinsta_hide_col").show();
+			jQuery("#grid_loadmore").show(); 
+			jQuery('.updated').hide();    
+        }
+        if(jQuery(this).attr("value")=="masonry_layout"){
+			jQuery(".wp_carowsel_hide").hide();
+			jQuery("#wpinsta_IMAGE_SLIDER").hide();
+			jQuery("#wpinsta_hide_col").show();
+			jQuery("#grid_loadmore").show(); 
+			jQuery('.updated').hide();    
+        }
+    });
+	jQuery(".wpinsta_carousel_layout_show").show();
+	jQuery("#grid_loadmore").hide();
+	jQuery("#wpinsta_hide_col").hide();
+	if(jQuery("input:radio[name='wpinsta_layoutselect'][value='grid_layout']").is(":checked")) { 
+     jQuery(".wp_carowsel_hide").hide();
+	 jQuery("#wpinsta_IMAGE_SLIDER").hide();
+	 jQuery("#wpinsta_hide_col").show();
+     jQuery("#grid_loadmore").show(); 
+  }
+  if(jQuery("input:radio[name='wpinsta_layoutselect'][value='masonry_layout']").is(":checked")) { 
+     jQuery(".wp_carowsel_hide").hide();
+	 jQuery("#wpinsta_IMAGE_SLIDER").hide();
+	 jQuery("#wpinsta_hide_col").show();
+     jQuery("#grid_loadmore").show(); 
+  } 
+});

@@ -1,0 +1,23 @@
+Monday, 05-Dec-2016 15:23:40 - restore started
+Monday, 05-Dec-2016 15:23:40 - wp version     : 4.6.1
+Monday, 05-Dec-2016 15:23:40 - php version    : 5.5.9-1ubuntu4.20
+Monday, 05-Dec-2016 15:23:40 - mysql version  : 5.5.53
+Monday, 05-Dec-2016 15:23:40 - memory limit   : 1024M
+Monday, 05-Dec-2016 15:23:40 - execution time : 600
+Monday, 05-Dec-2016 15:23:40 - mysql timeout  : 600
+Monday, 05-Dec-2016 15:23:40 - socket timeout : 600
+Monday, 05-Dec-2016 15:23:40 - file download started
+Monday, 05-Dec-2016 15:23:41 - download finished, filesize - 42.48 MB
+Monday, 05-Dec-2016 15:23:41 - extracting database using ziparchive
+Monday, 05-Dec-2016 15:23:41 - database import started
+Monday, 05-Dec-2016 15:23:42 - updating mysql query with current site's url - new query : "INSERT INTO wp_options VALUES("1", "siteurl", "https://cocksure-brewing-co-jamesbyrne89.c9users.io", "yes")"
+Monday, 05-Dec-2016 15:23:42 - mysql query failed. error : 1065 Query was empty - query : ""
+Monday, 05-Dec-2016 15:23:42 - database import finished
+Monday, 05-Dec-2016 15:23:42 - search and replace started
+Monday, 05-Dec-2016 15:23:42 - there are 16 tables to scan
+Monday, 05-Dec-2016 15:23:42 - search and replace finished
+Monday, 05-Dec-2016 15:23:42 - extracting archive using ziparchive
+Monday, 05-Dec-2016 15:23:42 - copying files..
+Monday, 05-Dec-2016 15:23:43 - deleting temp directory..
+Monday, 05-Dec-2016 15:23:43 - deleting downloaded zip file..
+Monday, 05-Dec-2016 15:23:43 - restore finished
