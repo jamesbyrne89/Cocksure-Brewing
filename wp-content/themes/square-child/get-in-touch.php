@@ -11,7 +11,7 @@
 get_header(); ?>
 
 <header class="contact-main-header">
-
+<img class="header-img" src="/wp-content/uploads/2016/12/brew-news-banner-bw.jpg"/>
 <?php the_title( '<h1 class="sq-main-title">', '</h1>' ); ?>
 	</div>
 </header><!-- .entry-header -->

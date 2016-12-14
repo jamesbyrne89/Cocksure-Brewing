@@ -52,6 +52,9 @@ Life is too short to be one of those sheep, pessimistic bores.</p><p> Surround y
 	 	<div id="ipa" class="beer-faded">
 		<img class="beer-img" src="/wp-content/uploads/2016/12/ipa_faded.jpg"/>
 	</div>
+		<div id="red" class="beer-faded">
+		<img class="beer-img" src="/wp-content/uploads/2016/12/red_faded.jpg"/>
+	</div>
 		</div>
 		</section>
 	<div class="beer-cta"><div class="cta-button"><a href="/cocksure/the-beer/">See the range<span class="arrows">>></span></a></div></div>
@@ -64,7 +67,7 @@ Life is too short to be one of those sheep, pessimistic bores.</p><p> Surround y
 </section>
 
 <section id="news-section">
-<div id="news-header"><div id="news-wrapper"><img src="/wp-content/uploads/2016/11/COCKSURE_FB_PROFILE.jpg"/><div id="news-header-text"><h3 id="news-section-header">Get your fix of brew news</h3>Get the latest Cocksure news straight to your inbox</div><span class="cta-button"><a href="mailto:mail@jamestbyrne.com">Sign up<span class="arrows">>></span></a></span></div></div>
+<div id="news-header"><div id="news-wrapper"><div class="news-img-wrapper"><img src="/wp-content/uploads/2016/11/COCKSURE_FB_PROFILE.jpg"/></div><div id="news-header-text"><h3 id="news-section-header">Get your fix of brew news</h3>Get the latest Cocksure news straight to your inbox</div><span class="cta-button"><a href="mailto:mail@jamestbyrne.com">Sign up<span class="arrows">>></span></a></span></div></div>
 
 <?php if ( is_active_sidebar( 'square-above-footer' ) ) : ?>
 <div class="insta-grid">

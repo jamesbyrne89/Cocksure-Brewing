@@ -48,7 +48,7 @@ In	line	with	the	UN’s	new	17	Sustainable	Development	Goals, and	with	particula
   	<li>=</li>
   	<li><img class="gacah-icons" src="/wp-content/uploads/2016/12/donation-icon.png"/></li>
   	</ul>
-  	25p from the purchase of every 12-beer crate of Cocksure to Farm Africa, to help support sustainable farming projects in Africa.
+  	25p from the purchase of every case of 12 beers of Cocksure is donated to Farm Africa to help support sustainable farming projects in Africa.
   	</div>
   </section>
   <section id="gacah-four">

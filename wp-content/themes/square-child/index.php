@@ -8,6 +8,7 @@
 get_header(); ?>
 
 <header class="blog-main-header">
+	<img class="header-img" src="/wp-content/uploads/2016/12/brew-news-banner-bw.jpg"/>
 	<?php 
 	if( is_home() && 'page' == get_option( 'show_on_front' )){
 	$blog_page_id = get_option('page_for_posts');
@@ -22,7 +23,7 @@ get_header(); ?>
 
 
 <div class="blog-container">
-	<div id="blog-primary" class="content-area">
+	<div class="blog-primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>

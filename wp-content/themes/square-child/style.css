@@ -17,7 +17,7 @@ This theme, like WordPress, is licensed under the GPL.
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: 'karla', sans-serif;
+	font-family: 'roboto condensed', 'karla', sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -232,7 +232,7 @@ input,
 select,
 textarea {
 	color: #000;
-	font-family: 'karla', sans-serif;
+	font-family: 'roboto condensed', 'karla', sans-serif;
 	font-size: 14px;
 	line-height: 1.6;
 }
@@ -340,12 +340,7 @@ big {
 ## The Beer Page
 --------------------------------------------------------------*/
 .beer-main-header {
-    background-color: #F5DA07;
-    background: url(/wp-content/uploads/2016/12/tanks_bw.jpg);
-    filter: grayscale();
-    background-size: cover;
-    background-position: 0px -400px;
-    padding: 300px 0 20px;
+
     min-height: 30vh;
     margin-bottom: 0px;
     width: 100%;
@@ -353,6 +348,11 @@ big {
     top: 90px;
     z-index: -999;
     text-align: center;
+}
+
+.header-img {
+	width: 100%;
+	height: 100%;
 }
 
 #beer-details-section {
@@ -430,6 +430,154 @@ big {
 	font-family: 'Roboto Condensed', 'karla', arial, sans-serif;
 }
 
+.beer-info-title {
+		text-align: left;
+	color: #000;
+	font-weight: 800;
+	font-size: 3em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', 'karla', arial, sans-serif;
+	display: block;
+	height: 50%;
+	padding: 2.75em 2.0625rem 0px 2.0625rem;
+	margin: 0;
+	z-index: 99999;
+}
+
+.pale-info {
+		background-color: #F5DA07;
+}
+
+.ipa-info {
+		background-color: #94DC19;
+}
+.red-info {
+		background-color: #EB3727;
+}
+
+.beer-info-wrapper-aside {
+	    max-width: 50%;
+}
+
+.beer-experience-title, .beer-taste-title {
+	text-transform: uppercase;
+	margin-bottom: 1.5em;
+}
+
+.beer-detail-info-left {
+    background-color: rgba(187,169,136,0.3);
+    box-sizing: border-box;
+    color: #FFFFFF;
+    height: 50%;
+    padding: 2.0625rem;
+    position: relative;
+    font-size: 1.25em;
+}
+
+.beer-detail-info-left:before {
+    background-color: rgba(187,169,136,0.3);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50vw;
+    width: 50vw;
+}
+
+.beer-detail-info-right {
+    background-color: rgba(187,169,136,0.3);
+    box-sizing: border-box;
+    color: #FFFFFF;
+    height: 50%;
+ padding: 2.0625rem;
+    position: relative;
+    font-size: 1.25em;
+    display: block;
+    flex: 1 0 auto;
+}
+
+
+.beer-detail-info-secondary-left {
+    background-color: #000;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    max-width: 100%;
+    height: auto;
+	padding: 2.0625rem;
+    position: relative;
+    font-size: 1.25em;
+    margin-bottom: 50px;
+}
+
+.beer-detail-info-secondary-left:before {
+    background-color: #000;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50vw;
+    width: 50vw;
+}
+
+
+.beer-detail-info-secondary-right {
+    background-color: #000;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    height: auto;
+    margin-right: 0px;
+	padding: 2.0625rem;
+    position: relative;
+    right: 0px;
+    font-size: 1.25em;
+    margin-bottom: 50px;
+    z-index: 9999;
+}
+
+.beer-detail-info-secondary-right:after {
+    background-color: #000;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -50vw;
+    width: 50vw;
+}
+
+
+.beer-detail-info-right:after {
+    background-color: rgba(187,169,136,0.3);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -50vw;
+    width: 50vw;
+}
+
+.beer-info-img-wrapper {
+	max-width: 50%;
+	max-height: 100%;
+	z-index: 500;
+	flex: 1 2 auto;
+	background: transparent;
+	overflow: hidden;
+	text-align: center;
+	justify-content: center;
+}
+.beer-info-img {
+    max-width: 100%;
+    margin: auto;
+    max-height: 100%;
+    height: auto;
+    border:none;
+    transition:all 1s;
+    position: relative;
+    bottom: 0px;
+    overflow: hidden;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -437,23 +585,17 @@ big {
 --------------------------------------------------------------*/
 
 .blog-main-header{
-	background: url('/wp-content/uploads/2016/12/31489054506_ddebc3a6f1_o_bw.jpg') no-repeat;
-    filter: grayscale();
-    background-size: cover;
-    background-position: 0px -400px;
-    padding: 300px 0 20px;
-    min-height: 30vh;
-    margin-bottom: 0px;
-    width: 100%;
-    position: relative;
-    top: 90px;
-    z-index: -999;
-    text-align: center;
+	min-height: 30vh;
+	width: 100%;
+	position: relative;
+	    top: 90px;
+	z-index: -999;
+	text-align: center;
 }
 
-#blog-primary {
+.blog-primary {
 	width: 100%;
-	padding: 5vh 20vw;
+	padding: 0 20vw 5vh 20vw;
 	margin: 10vh auto 0px auto;
 	background-color: #fff;
 }
@@ -539,12 +681,6 @@ big {
 --------------------------------------------------------------*/
 
 .contact-main-header{
-	background-color: #F5DA07;
-	background: url('/wp-content/uploads/2016/12/tanks_bw.jpg');
-	filter:grayscale();
-	background-size: cover;
-	background-position: 0px -400px;
-	padding: 300px 0 20px;
 	min-height: 30vh;
 	width: 100%;
 	position: relative;
@@ -678,7 +814,7 @@ color: #000;}
 	height:50px;
 	padding:5px 10px;
 	font-size: 16px;
-	font-family: 'karla', arial, sans-serif;
+	font-family: 'roboto condensed', 'karla', arial, sans-serif;
 	text-transform: none;
 	color: #000;
 	letter-spacing:1px;
@@ -762,6 +898,23 @@ color: #000;}
 	text-align: center;
 }
 
+.sq-404-container .sq-main-title {
+	margin: 0px auto;
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 0.25rem;
+	font-size: 3.75rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #fff;
+	width: auto;
+	bottom: 0px;
+	text-align: center;
+	margin: auto;
+	background-color: #000;
+	border-radius: 3.25rem;
+	min-width: 20vw;
+}
+
 .sq-404-container{
 	width: 80%;
 	margin: 50px auto;
@@ -784,9 +937,9 @@ color: #000;}
 	background-color: #F5DA07;
 	background: url('/wp-content/uploads/2016/12/sq7a8567_bw.jpg');
 	background-size: cover;
-	background-position: 0px -300px;
+	background-position: 0px 30%;
 	padding: 300px 0 0 0;
-	height: calc(100vh - 82px);
+	height: calc(100vh - 100px);
 	margin-bottom: 0px;
 	width: 100%;
 	position: relative;
@@ -795,9 +948,13 @@ color: #000;}
 	text-align: center;
 }
 
+.gacah-main-header .sq-main-title {
+	bottom: 0px;
+}
+
 #gacah-one {
 	width: 100%;
-	margin: 82px auto;
+	margin: 82px auto 0px auto;
 	background-color: white;
 	height: auto;
 	z-index: 999;
@@ -817,22 +974,27 @@ color: #000;}
 	width: 100%;
 	background-color: #cacaca;
 	color: #000;
-	height: 45vh;
+	min-height: 45vh;
 }
 
 .gacah-logo-wrapper {
 	max-height: 45vh;
 	width: 50%;
 	text-align: center;
+	flex: 1 0 400px;
+	flex-wrap: wrap;
 }
 .gacah-logo-wrapper img {
 	height: 100%;
 	width: auto;
+	flex: 1 0 auto;
 }
 .quote-wrapper-aside {
 	padding: 50px 100px 50px 50px;
 	width: 50%;
 	font-size: 1.25em;
+	flex: 1 0 400px;
+	flex-wrap: wrap;
 }
 .quote-source {
 	text-align: right;
@@ -849,8 +1011,9 @@ color: #000;}
 	background-color: #cacaca;
 	color: #000;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
-		height: 45vh;
+	min-height: 45vh;
 }
 #gacah-three {
 	width: 100%;
@@ -895,9 +1058,9 @@ color: #000;}
 }
 #gacah-four {
 	width: 100%;
-	margin: 100px auto 50px auto;
+	margin: 50px auto 50px auto;
 	background-color: white;
-	height: 30vh;
+	min-height: 30vh;
 	z-index: 999;
 	color: #000;
 	background-color: #cacaca;
@@ -908,11 +1071,14 @@ color: #000;}
 	height: 100%;
 	width: 60%;
 	margin: auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .farm-africa-left {
-	height: 30vh;
+	min-height: 30vh;
 	width: 40%;
+	flex: 1 0 300px;
 }
 
 
@@ -925,10 +1091,11 @@ color: #000;}
 .farm-africa-right {
 	width: 50%;
 	padding: 30px;
+	flex: 1 0 300px;
 }
 .farm-africa-right h2 {
 	font-weight: bold;
-	font-family: 'karla', arial, sans-serif;
+	font-family: 'roboto condensed', 'karla', arial, sans-serif;
 }
 .farm-africa-right p {
     margin: 10px 0px;
@@ -989,6 +1156,7 @@ color: #000;}
 .huge_it_slideshow_image_wrap_2 {
 	width: 100vw !important;
 	height: auto !important;
+	max-height: auto !important;
 	z-index: -1000;
 	position: fixed !important;
 }
@@ -1001,12 +1169,11 @@ color: #000;}
 	display: none !important;
 }
 
-
 .huge_it_slideshow_image_wrap1_2, .huge_it_slide_bg_2 li img {
 	width: 100% !important;
 	min-height: auto !important;
 	display: flex !important;
-	max-height: 90vh !important;
+	max-height: 95vh !important;
 }
 
 .huge_it_slide_bg_2 li img {
@@ -1059,7 +1226,7 @@ mix-blend-mode: multiply;
 	width: 60%;
 	color: #000;
 		font-size: 22px;
-	font-family: 'karla', serif;
+	font-family: 'roboto condensed', 'karla', serif;
 }
 
 #intro-holder p {
@@ -1067,7 +1234,7 @@ mix-blend-mode: multiply;
 	color: #000;
 	padding: 0px;
 	font-weight: normal;
-	font-family: 'karla';
+	font-family: 'roboto condensed', 'karla';
 	display: flex;
 	justify-content: center;
 	margin: 10px;
@@ -1081,14 +1248,14 @@ mix-blend-mode: multiply;
 }
 
 .beer-section-wrapper {
-	width: 50%;
+	width: 70%;
 	margin: 0 auto 100px auto ;
 	text-align: center;
 	height: 480px;
 	display: flex;
 	flex-wrap: wrap;
 	overflow: visible;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 20px 0px 0px 0px;
 }
 
@@ -1097,22 +1264,20 @@ mix-blend-mode: multiply;
     box-sizing: border-box;
     color: #FFFFFF;
     height: 100px;
-    width: 50%;
+    width: 70%;
     margin: auto auto -100px auto;
     position: relative;
-    bottom: 220px;
+    bottom: 160px;
 	text-align: center;
-	background-color: rgba(187,169,136,0.0);
+	background-color: rgba(187,169,136,0.3);
 	padding-top: 15px;
 }
-
-
 
 .beer-faded {
     display: block;
     position: relative;
 	height: 500px;
-	width: 49%;
+	width: 33.333%;
 	margin: 20px 0;
 	text-align: center;
 	display: inline-block;
@@ -1124,7 +1289,8 @@ mix-blend-mode: multiply;
 
 .beer-img {
     top: -140%;
-    height: 100%;
+    height: auto;
+    width: 100%;
     margin: auto;
     opacity:0.7;
     filter:alpha(opacity=0);/*For IE6 - IE8*/
@@ -1138,6 +1304,10 @@ mix-blend-mode: multiply;
 
 #ipa {
 	background-color: #94DC19;
+	margin: 0px;
+}
+#red {
+	background-color: #EB3727;
 	margin: 0px;
 }
 
@@ -1168,7 +1338,7 @@ mix-blend-mode: multiply;
 }
 
 .beer-info-wrapper {
-	width: 60%;
+	width: 70%;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -1190,141 +1360,7 @@ mix-blend-mode: multiply;
 	font-family: 'Roboto Condensed', 'karla', arial, sans-serif;
 }
 
-.beer-info-title {
-		text-align: left;
-	color: #000;
-	font-weight: 800;
-	font-size: 3em;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	font-family: 'Roboto Condensed', 'karla', arial, sans-serif;
-	display: block;
-	height: 50%;
-	padding: 2.75em 2.0625rem 0px 2.0625rem;
-	margin: 0;
-	z-index: 99999;
-}
 
-.pale-info {
-		background-color: #F5DA07;
-}
-
-.ipa-info {
-		background-color: #94DC19;
-}
-
-.beer-info-wrapper-aside {
-	    max-width: 50%;
-}
-
-.beer-experience-title, .beer-taste-title {
-	text-transform: uppercase;
-}
-
-.beer-detail-info-left {
-    background-color: rgba(187,169,136,0.3);
-    box-sizing: border-box;
-    color: #FFFFFF;
-    height: 50%;
-    padding: 2.0625rem;
-    position: relative;
-    font-size: 1.25em;
-}
-
-.beer-detail-info-left:before {
-    background-color: rgba(187,169,136,0.3);
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -50vw;
-    width: 50vw;
-}
-
-.beer-detail-info-right {
-    background-color: rgba(187,169,136,0.3);
-    box-sizing: border-box;
-    color: #FFFFFF;
-    height: 50%;
- padding: 2.0625rem;
-    position: relative;
-    font-size: 1.25em;
-}
-
-.beer-detail-info-secondary-left {
-    background-color: #000;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    max-width: 100%;
-    height: auto;
-	padding: 2.0625rem;
-    position: relative;
-    font-size: 1.25em;
-    margin-bottom: 50px;
-}
-
-.beer-detail-info-secondary-left:before {
-    background-color: #000;
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -50vw;
-    width: 50vw;
-}
-
-
-.beer-detail-info-secondary-right {
-    background-color: #000;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    height: auto;
-    margin-right: 0px;
-	padding: 2.0625rem;
-    position: relative;
-    right: 0px;
-    font-size: 1.25em;
-    margin-bottom: 150px;
-}
-
-.beer-detail-info-secondary-right:after {
-    background-color: #000;
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: -50vw;
-    width: 50vw;
-}
-
-
-.beer-detail-info-right:after {
-    background-color: rgba(187,169,136,0.3);
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: -50vw;
-    width: 50vw;
-}
-
-.beer-info-img-wrapper {
-	max-width: 50%;
-	max-height: 100%;
-	z-index: 500;
-	flex: 1 0 50%;
-}
-.beer-info-img {
-    max-width: 100%;
-    margin: 0;
-    max-height: 100%;
-    height: auto;
-    border:none;
-    transition:all 1s;
-    position: absolute;
-    bottom: 0px;
-    z-index: 500;
-}
 
 
 .beer-right{
@@ -1380,7 +1416,7 @@ mix-blend-mode: multiply;
 	padding: 0px;
 	font-weight: bold;
 	font-size: 18px;
-	font-family: 'karla';
+	font-family: 'roboto condensed';
 	display: flex;
 	justify-content: center;
 	margin-bottom: 30px;
@@ -1418,15 +1454,16 @@ mix-blend-mode: multiply;
     padding: 20px;
     text-align: center;
     width: 280px;
+    max-width: 100%;
     color: #fff;
-    border: solid 3px #000;
     display: inline-block;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     transition: all ease 0.3s;
     }
 
- .cta-button a:hover {	font-family: 'roboto condensed', 'karla', arial, sans-serif ;
+ .cta-button a:hover {	
+ 		font-family: 'roboto condensed', 'karla', arial, sans-serif ;
 		text-decoration: none;
 		text-transform: uppercase ; 
 		font-weight: 800;
@@ -1434,10 +1471,8 @@ mix-blend-mode: multiply;
 		padding: 20px;
 		width: 280px ;
 		color: #fff;
-		background-color: #000;
-		border: solid 3px #000;
+		background-color: #282828;
 		display: inline-block;
-		opacity: 0.75;
 }
 
 .arrows {
@@ -1453,13 +1488,14 @@ mix-blend-mode: multiply;
 	text-align: center;
 	color: #FFF;
 	padding: 0px 20px;
-	height: 100px;
-		margin-bottom: 50px;
+	min-height: 100px;
+	max-height: auto;
+	margin-bottom: 50px;
 }
 
 #news-header img {
-	margin-top: -15px;
-	max-height: 100px;
+	height: auto;
+	max-height: 100%;
 	position: relative;
 	top: 0px;
 	display:inline-block;
@@ -1467,17 +1503,26 @@ mix-blend-mode: multiply;
 }
 
 #news-wrapper {
-	width: 1000px;
+	width: 50%;
+	height: 100%;
 	margin: auto;
-	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#news-wrapper .cta-button a {
+	margin-top: 50px;
+	flex: 0 1 200px;
+	flex-shrink: 1;
 }
 
 #news-header-text {
 	display: inline-block;
 	font-size: 18px;
-	margin: auto 40px auto 60px;
+	padding: 60px 60px 40px 60px;
 	text-align: left;
-	float: left;
+	width: 40%;
+	flex: 1 1 180px;
 }
 
 #signup-button a {
@@ -1549,6 +1594,14 @@ mix-blend-mode: multiply;
 .instagrid ul {
 	display: flex;
 	flex-wrap: wrap;
+	min-height: 200px;
+}
+
+.ri-grid ul li {
+	flex: 0 0 200px;
+	min-height: 150px;
+	min-width: 150px;
+	flex-basis: auto;
 }
 
 
@@ -1659,9 +1712,8 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	background-color: #000;
+	background-color: #282828;
 	color: #fff;
-	opacity: 0.7;
 }
 
 button:focus,
@@ -1913,10 +1965,14 @@ a:active {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+
+}
+.ri-grid ul:before, .ri-grid ul:after {
+	display: none;
 }
 
-.widget ul ul{
-	margin-left: 10px;
+.widget ul li{
+	margin: 0px;
 }
 
 .widget a{
@@ -2003,7 +2059,7 @@ a:active {
 .single-entry-content{
 	font-size: 18px;
 	line-height: 1.8;
-	font-family: 'karla', arial, sans-serif;
+	font-family: 'roboto condensed', 'karla', arial, sans-serif;
 	margin: 0px auto;
 
 }
@@ -2011,7 +2067,7 @@ a:active {
 .single-entry-content p{
 	font-size: 18px;
 	line-height: 1.8;
-	font-family: 'karla', arial, sans-serif;
+	font-family: 'roboto condensed', 'karla', arial, sans-serif;
 	text-align: left;
 	color: #000;
 }
@@ -2152,8 +2208,7 @@ a:active {
 
 .entry-readmore a:hover {
 	margin-left: 10px;
-	background-color: #000;
-	opacity: 0.7;
+	background-color: #282828;
 	padding: 10px 20px;
 		font-size: 14px !important;
 }
@@ -2589,7 +2644,7 @@ object {
 	left: 0;
 	right: 0;
 	z-index: 999;
-	font-family: "karla", serif;
+	font-family: 'roboto condensed', "karla", serif;
 	height: 82px;
 	transition: all 0.6s ease-in-out;
 	-moz-transition: all 0.6s ease;
@@ -2654,7 +2709,7 @@ object {
 	color: #fff;
 	position: relative;
 	width: auto;
-	bottom: 0px;
+	bottom: 160px;
 	text-align: center;
 	margin: auto;
 	background-color: #000;
@@ -3995,7 +4050,7 @@ html, body {
 	    height: auto;
 	}
 
-	#blog-primary {
+	.blog-primary {
     width: 100%;
     padding: 0 5vw;
         margin: 0px auto 0px auto;
@@ -4020,6 +4075,27 @@ overflow: hidden;
 #contact-right {
 	padding: 40px;
 }
+	.gacah-main-header .sq-main-title {
+		font-size: 3em;
+	}
+
+.gacah-second-wrapper {
+	width: 100%;
+
+}
+.gacah-third-wrapper ul {
+	margin: 50px 0px;
+}
+#gacah-three h2 {
+	margin-bottom: 0;
+}
+.gacah-fourth-wrapper {
+	width: 80%;
+}
+.farm-africa-left {
+	padding: 30px 0px;
+}
+
 }
 
 @media screen and (max-width: 900px){
@@ -4120,7 +4196,7 @@ overflow: hidden;
 #intro-holder {
     width: 95%;
 }
-#pale-ale, #ipa {
+#pale-ale, #ipa, #red {
 	height: 100%;
 	margin: 0;
 }
@@ -4135,7 +4211,7 @@ display: none !important;
 display: block !important;
 }
 .beer-section-wrapper {
-	width: 95%;
+	width: 100%;
 }
 #about-primary {
 	padding: 10vh 50px;
@@ -4155,6 +4231,22 @@ display: block !important;
 	.blog-container {
 		margin-top: 20vh;
 	}
+	
+	.gacah-main-header .sq-main-title {
+		font-size: 1.75em;
+	}
+.gacah-first-wrapper, .gacah-third-wrapper, .gacah-fourth-wrapper {
+	width: 90%;
+}
+#news-wrapper {
+	width: 80%;
+}
+#news-wrapper img {
+	flex: 0 0 auto;
+}
+#news-wrapper .cta-button a {
+	margin-top: 40px;
+}
 }
 
 @media screen and (max-width: 768px){
@@ -4311,6 +4403,10 @@ display: block !important;
 .insta-grid {
 	margin-bottom: 0px;
 	margin-top: 0px;
+	width: 100%;
+}
+.insta-grid h5 {
+		padding: 0px 10px;
 }
 
 #charity-section {
@@ -4334,7 +4430,23 @@ display: block !important;
 
 	order: 0;
 }
-
+#news-header {
+	max-height: auto;
+	padding: 0px;
+}
+#news-wrapper {
+width: 100%;
+padding: 20px;
+}
+#news-wrapper .cta-button {
+	margin: 20px auto;
+}
+#news-wrapper img {
+	display: none;
+}
+#news-header-text {
+	padding: 20px;
+}
 .beer-info-img-wrapper{
 	order: 0;
 	max-width: 100%;
@@ -4356,6 +4468,25 @@ display: none;
 .beer-detail-info-secondary-left p, .beer-detail-info-secondary-right p {
     margin: 0 ;
 }
+.quote-wrapper-aside {
+	padding: 50px;
+}
+	.gacah-main-header .sq-main-title {
+		font-size: 1.75em;
+	}
+#gacah-four{
+	margin-top: 0px;
+}
+.gacah-main-header {
+	top: 0px;
+}
+#gacah-one {
+	margin-top: 0px;
+
+}
+.ri-grid ul li:nth-child(6) {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 580px){
@@ -4403,8 +4534,6 @@ display: none;
 .beer-cta {
 	bottom: 150px;
 }
-
-
 .beer-info-wrapper-aside, .left-align-aside,
 .right-align-aside {
 	max-width: 100%;
@@ -4418,6 +4547,15 @@ display: none;
 .single-main-header {
 	padding-top: 150px;
 }
+.quote-wrapper-aside {
+	padding: 40px;
+}
+	.gacah-main-header .sq-main-title {
+		font-size: 1.25em;
+	}
+	.ri-grid ul li:nth-child(5), .ri-grid ul li:nth-child(6) {
+		display: none;
+	}
 
 }
 
@@ -4492,6 +4630,24 @@ display: none;
 	#intro-section {
 	margin-top: 520px;
 }
+	.gacah-main-header .sq-main-title {
+		font-size: 1em;
+	}
+	.gacah-first-wrapper{
+		padding: 70px 20px 80px 20px;
+	}
+	.gacah-third-wrapper {
+	padding: 80px 20px;	
+	}
+	.farm-africa-right {
+		padding: 0px 0px 30px 0px;
+	}
+#news-wrapper .cta-button, #news-wrapper .cta-button a {
+	margin-top: 0px;
+}
+#news-header-text {
+	text-align: center;
+}
 }
 
 @media screen and (max-width: 380px){
@@ -4517,12 +4673,21 @@ width: 100vw;
 .single-entry-content p {
 	font-size: 1em;
 }
+		#charity-section img {
+		height: auto;
+}
+
+}
 
 @media screen and (max-width: 320px){
 	.sq-elasticstack{
 		height: 300px;
 	}
-	
+		.gacah-main-header .sq-main-title {
+		font-size: 0.625em;
+	}
+	blockquote {
+		padding: 0px 10px;
 }
 
 @media screen and (min-width: 901px){
